@@ -38,6 +38,7 @@ easy.addEventListener("click", function() {
     pickedColor = pick(numofSquares);
     rgb.textContent = pickedColor;
     display.textContent = "";
+    h1.style.backgroundColor = "rgb(51, 148, 204)";
     for (let i = 0; i < 2 * numofSquares; i++) {
         if (color_list[i]) {
             square[i].style.backgroundColor = color_list[i];
@@ -54,6 +55,7 @@ hard.addEventListener("click", function() {
     display.textContent = "";
     color_list = generate(numofSquares);
     pickedColor = pick();
+    h1.style.backgroundColor = "rgb(51, 148, 204)";
     rgb.textContent = pickedColor;
     for (let i = 0; i < numofSquares; i++) {
         square[i].style.display = "block";
@@ -67,6 +69,7 @@ newColor.addEventListener("click", function() {
     pickedColor = pick(numofSquares);
     display.textContent = ""
     rgb.textContent = pickedColor;
+    h1.style.backgroundColor = "rgb(51, 148, 204)";
     for (let i = 0; i < numofSquares; i++) {
         if (color_list[i]) {
             square[i].style.backgroundColor = color_list[i];
